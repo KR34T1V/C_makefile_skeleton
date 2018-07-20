@@ -6,7 +6,7 @@
 #    By: cterblan <cterblan@student.wethinkcode>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/17 11:24:40 by cterblan          #+#    #+#              #
-#    Updated: 2018/07/20 12:34:27 by cterblan         ###   ########.fr        #
+#    Updated: 2018/07/20 13:17:28 by cterblan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,10 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@make all -C $(LIBFT_DIR)/
 	@echo "\033[35m\t\t[COMPILING] $@\033"
-	$(CC) -o $@ -I $(INC_DIR) -L $(LIBFT_DIR)/ $(LIB_FLAG) $(OBJ)
+#COMPILE EXECUTABLE vvv
+	#$(CC) -o $@ -I $(INC_DIR) -L $(LIBFT_DIR)/ $(LIB_FLAG) $(OBJ)
+#COMPILE LIBRARY vvv
+	#ar rcs $(NAME) $(OBJ)
 	@echo "\033[32m\t\t[COMPILED SUCCESSFULLY]\033"
 	#DON'T TOUCH ^^^
 
