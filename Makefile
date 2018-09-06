@@ -6,7 +6,7 @@
 #    By: cterblan <cterblan@student.wethinkcode>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/17 11:24:40 by cterblan          #+#    #+#              #
-#    Updated: 2018/08/19 08:08:04 by cterblan         ###   ########.fr        #
+#    Updated: 2018/09/06 15:28:19 by cterblan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ OBJ := $(addprefix $(OBJ_DIR)/, $(SRC:%.c=%.o))
 #NAME_DIR := $(LIBDIR)/{library}
 {LIBRARY}_DIR := $(LIB_DIR)/{LIBRARY}
 #ADD ADDITIONAL LIBRARIES HERE ^^^
-LIB_FLAG := -lft
+LIB_FLAG := -l{LIBRARY NAME WITHOUT THE "lib" or file extention}
 ################################################################################
 #								COMPILER
 ################################################################################
