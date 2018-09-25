@@ -46,7 +46,7 @@ LIB_FLAG := -l{LIBRARY NAME WITHOUT THE "lib" or file extention}
 ################################################################################
 #								COMPILER
 ################################################################################
-CFLAGS := -Wall -Werror -Wextra
+CFLAGS := -Wall -Werror -Wextra -D_XOPEN_SOURCE=500 -g
 #ADD ADDITIONAL FLAGS HERE ^^^
 CC := gcc $(CFLAGS)
 ################################################################################
