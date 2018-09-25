@@ -58,7 +58,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@make all -C $(LIBFT_DIR)/
 	@echo "\033[35m\t\t[COMPILING] $@\033"
-	@#$(CC) -o $@ -I $(INC_DIR) -L $(LIBFT_DIR)/ $(LIB_FLAG) $(OBJ)
+	@#$(CC) -o $@ $(OBJ) -I $(INC_DIR) -L $(LIBFT_DIR)/ $(LIB_FLAG)
 	@#COMPILE EXECUTABLE ^^^^^
 	@#ar rcs $(NAME).a $(OBJ) $(LIBFT_DIR)/obj/*.o^
 	@#COMPILE LIBRARY ^^^^^^^
